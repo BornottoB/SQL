@@ -1,0 +1,90 @@
+Open Server 5.3.8/MySQL-8.0
+1. 
+CREATE DATABASE Training;
+USE Training;
+2.
+CREATE TABLE Trainee ( trainee_id int(10) unsigned, name varchar(255), email varchar(255) );
+CREATE TABLE Course ( course_id int(10) unsigned, name varchar(255), description varchar(255) );
+CREATE TABLE History ( history_id int(10) unsigned, trainee_id int(10) unsigned, course_id int(10) unsigned, start int(11), end int(11), status tinyint(4) );
+
+ALTER TABLE Trainee ADD PRIMARY KEY (trainee_id);
+ALTER TABLE Course ADD PRIMARY KEY (course_id);
+ALTER TABLE History ADD PRIMARY KEY (history_id);
+3.
+INSERT INTO Trainee (trainee_id, name, email) VALUES (1,'Alex','alex@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (2,'Andrew','andrew@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (3,'Albert','albert@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (4,'Boris','boris@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (5,'Bob','bob@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (6,'Olivia','olivia@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (7,'Hannah','hannah@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (8,'Abigail','abigail@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (9,'Isabella','isabella@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (10,'Ashley','ashley@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (11,'Heidi','heidi@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (12,'Paige','paige@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (13,'Faith','faith@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (14,'Rose','rose@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (15,'Maddison','maddison@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (16,'Dexter','dexter@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (17,'Connor','connor@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (18,'Stanley','stanley@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (19,'Theodore','theodore@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (20,'Caleb','caleb@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (21,'Oliver','oliver@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (22,'Jack','jack@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (23,'Thomas','thomas@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (24,'Harry','harry@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (25,'Oscar','oscar@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (26,'Jessica','jessica@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (27,'Kelly','kelly@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (28,'Martha','martha@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (29,'Melissa','melissa@gmail.com');
+INSERT INTO Trainee (trainee_id, name, email) VALUES (30,'Yvonne','yvonne@gmail.com');
+
+INSERT INTO Course (course_id, name, description) VALUES (1,'Math','The Poincare conjecture');
+INSERT INTO Course (course_id, name, description) VALUES (2,'English','English for beginners');
+INSERT INTO Course (course_id, name, description) VALUES (3,'Programming','Open sources for beginners');
+INSERT INTO Course (course_id, name, description) VALUES (4,'Economy','Definition of economy');
+INSERT INTO Course (course_id, name, description) VALUES (5,'Politics','Politics and Strategy');
+INSERT INTO Course (course_id, name, description) VALUES (6,'PHP','Hypertext Preprocessor');
+
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (1,1,1,20210410,20210510,0);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (2,2,1,20210410,20210510,0);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (3,3,6,20210515,20210608,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (4,4,6,20210515,20210608,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (5,5,6,20210515,20210608,0);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (6,6,6,20210515,20210608,0);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (7,7,2,20210515,20210608,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (8,8,3,20210515,20210608,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (9,9,4,20210515,20210608,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (10,10,5,20210515,20210608,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (11,11,6,20210515,20210530,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (12,12,6,20210515,20210530,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (13,13,6,20210515,20210530,1);	
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (14,14,6,20210515,20210530,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (15,15,6,20210515,20210530,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (16,16,6,20210601,20210610,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (17,17,6,20210601,20210610,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (18,18,6,20210601,20210610,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (19,19,6,20210601,20210610,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (20,20,6,20210601,20210610,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (21,21,6,20210515,20210530,0);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (22,22,6,20210515,20210530,0);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (23,23,1,20210601,20210608,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (24,24,1,20210601,20210608,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (25,25,2,20210601,20210608,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (26,26,3,20210601,20210608,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (27,27,4,20210601,20210608,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (28,28,5,20210601,20210608,1);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (29,29,5,20210601,20210608,0);
+INSERT INTO History (history_id, trainee_id, course_id, start, end, status) VALUES (30,30,4,20210601,20210608,0);
+4.
+select trainee.name as trainee_name,trainee.email as trainee_email,course.name as course_name, history.end as history_end from history cross join trainee cross join course where history.trainee_id = trainee.trainee_id and history.course_id = course.course_id and history.course_id = 6 and history.status =1 and history.end BETWEEN date('2021-05-01') and date('2021-06-01')
+5.
+select name as course_name, (
+    select count(*)
+    from history
+    where history.course_id = course.course_id and end between date('2021-06-01') and date('2021-07-01') and status = 1
+    ) as quantity
+from course
